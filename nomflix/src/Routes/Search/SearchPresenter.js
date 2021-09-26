@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Loader from "Components/Loader";
-import Section from "Components/Section";
+import Loader from "../../Components/Loader";
+import Section from "../../Components/Section";
+import Error from "../../Components/Error";
 
 const Container = styled.div`
     padding: 0px 20px;
@@ -53,17 +54,18 @@ const SearchPresenter = ({
                             ))}
                         </Section>
                     )}
+                    {error && <Error text={error} />}
                 </>
             )
         }
     </Container>
 );
-SearchPresenter.prototype = {
+SearchPresenter.propTypes = {
     movieResults: PropTypes.array,
     tvResults: PropTypes.array,
+    searchTerm: PropTypes.string,
     loading: PropTypes.bool.isRequired,
     error: PropTypes.string,
-    searchTerm: PropTypes.array,
     handleSubmit: PropTypes.func.isRequired,
     updateTerm: PropTypes.func.isRequired
 }
