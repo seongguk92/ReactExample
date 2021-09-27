@@ -7,8 +7,6 @@ const Container = styled.div`
     font-size: 12px;
 `;
 
-
-
 const Image = styled.div`
     background-image: url(${props => props.bgUrl});
     height: 180px;
