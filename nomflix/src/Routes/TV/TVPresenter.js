@@ -29,7 +29,7 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
                     {airingToday.map(show => show.name)}
                 </Section>
             )}
-            {error && <Message text={error} />}
+            {error && <Message color="#e74c3c" text={error} />}
         </Container>
     );
 

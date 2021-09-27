@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Section from "../../Components/Section";
 import Loader from "../../Components/Loader";
 import Message from "../../Components/Message";
+import Poster from "../../Components/Poster";
 
 const Container = styled.div`
     padding:0px 20px;
@@ -19,7 +20,7 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, error, loading }) =>
                 <Section title="Now Playing">
                     {nowPlaying.map
                         (movie => (
-                            <span key={movie.id}>{movie.title}</span>
+                            <Poster />
                         ))}
                 </Section>
             )}
@@ -27,7 +28,7 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, error, loading }) =>
                 <Section title="Upcoming movies">
                     {upcoming.map
                         (movie => (
-                            <span key={movie.id}>{movie.title}</span>
+                            <Poster />
                         ))}
                 </Section>
             )}
@@ -35,7 +36,7 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, error, loading }) =>
                 <Section title="Popular movies">
                     {popular.map
                         (movie => (
-                            <span key={movie.id}>{movie.title}</span>
+                            <Poster />
                         ))}
                 </Section>
             )}
