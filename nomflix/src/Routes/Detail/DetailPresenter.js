@@ -4,6 +4,10 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet";
 import Loader from "../../Components/Loader";
 
+//유투브 동영상
+//영화사
+//internet movie database로 이동 탭으로
+
 const Container = styled.div`
     height:calc(100vh - 50px);
     width: 100%;
