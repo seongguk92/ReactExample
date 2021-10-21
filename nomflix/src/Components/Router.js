@@ -7,6 +7,7 @@ import Header from "./Header";
 import Detail from "Routes/Detail";
 
 //HashRouter
+//Router 학습
 export default () => (
     <Router>
         <>
