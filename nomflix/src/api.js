@@ -21,7 +21,7 @@ export const moviesApi = {
         params: {
             query: encodeURIComponent(term)
         }
-    })
+    })//
 }
 
 export const tvApi = {

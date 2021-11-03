@@ -7,9 +7,11 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.4",
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "^4.0.3",
     "styled-components": "^5.3.1",
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
   },
   "eslintConfig": {
     "extends": [
@@ -28,6 +32,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://seongguk2i.github.io/ReactExample",
   "browserslist": {
     "production": [
       ">0.2%",

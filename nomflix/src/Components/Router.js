@@ -7,6 +7,7 @@ import Header from "./Header";
 import Detail from "Routes/Detail";
 
 //HashRouter
+//Router 학습
 export default () => (
     <Router>
         <>
@@ -16,7 +17,7 @@ export default () => (
                 <Route path="/tv" exact component={TV} />
                 <Route path="/search" component={Search} />
                 <Route path="/movie/:id" component={Detail} />
-                <Route path="/show/:id" component={Detail} />
+                <Route path="/tv/:id" component={Detail} />
                 <Redirect from="*" to="/" />
             </Switch>
         </>
