@@ -64,7 +64,7 @@ const SearchPresenter = ({
                     )}
                     {tvResults && tvResults.length > 0 && (
                         <Section title="Show Results">
-                            {tvResults.map(show => (
+                            {tvResults.map((show, index) => (
                                 <Poster
                                     key={show.id}
                                     id={show.id}
