@@ -79,6 +79,7 @@ const Overview = styled.p`
 `;
 
 const DetailPresenter = ({ result, loading, error }) =>
+//관리자에서 사용
     loading ? (
         <>
             <Helmet>
