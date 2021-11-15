@@ -13,4 +13,4 @@ const human = {
 //const nmae = human.name; before
 
 const { name, lastName, nationality: difName, favFood: { dinner, breakfast, lunch } } = human;
-console.log(name, lastName, difName, dinner, breakfast, lunch);
+console.log(name, lastName, difName, dinner, breakfast, lunch)//;
