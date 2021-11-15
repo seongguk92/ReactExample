@@ -11,6 +11,6 @@ const human = {
 }
 
 //const nmae = human.name; before
-
+//after
 const { name, lastName, nationality: difName, favFood: { dinner, breakfast, lunch } } = human;
 console.log(name, lastName, difName, dinner, breakfast, lunch)//;
